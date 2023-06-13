@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../theme/app_theme.dart';
 import '../theme/responsive_screen_provider.dart';
 
 class FrameTitle extends StatelessWidget {
@@ -16,7 +17,12 @@ class FrameTitle extends StatelessWidget {
         children: [
           SelectableText(
             title!,
-            style: Theme.of(context).textTheme.displaySmall,
+            style: ResponsiveScreenProvider.isDesktopScreen(context)
+                ? Theme.of(context).textTheme.displaySmall:
+            const TextStyle(
+                fontSize: 28.0,
+                fontWeight: FontWeight.w700,
+                color: AppThemeData.textWhite),
           ),
           Padding(
             padding: ResponsiveScreenProvider.isDesktopScreen(context)

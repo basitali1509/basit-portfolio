@@ -110,7 +110,7 @@ class NavBar {
       child: ListView(
         padding: const EdgeInsets.symmetric(horizontal: 20.0),
         children: [
-          const SizedBox(height: 60.0),
+          const SizedBox(height: 35.0),
           miniHeader(),
           const SizedBox(height: 40.0),
           ButtonTextLarge(
@@ -165,6 +165,7 @@ class NavBar {
               },
               color: AppThemeData.buttonPrimary,
               message: 'Open my ${DataValues.navBarResume}'),
+          const SizedBox(height: 30.0),
         ],
       ),
     );

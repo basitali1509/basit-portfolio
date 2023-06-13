@@ -98,7 +98,7 @@ class _DS4ProjectsState extends State<DS4Projects> {
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
                             color: _currentPage == index
-                                ? Colors.blue
+                                ? const Color(0xFF019FAB)
                                 : Colors.grey,
                           ),
                         );

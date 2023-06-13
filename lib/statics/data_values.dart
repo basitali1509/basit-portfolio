@@ -5,7 +5,7 @@ class DataValues {
 
   static const String appDeveloper = 'Basit Ali';
   static const String appPackage = 'basitali';
-  static const String appVersion = '1.1.0';
+  static const String appVersion = '1.0.0';
   static const String appBuildNumber = '1';
 
   // External links
@@ -60,7 +60,6 @@ class DataValues {
     'Management',
     'Leadership',
     'Adaptability',
-    'Resilience',
     'Decision-making'
   ];
   static const String softSkillsTitle = 'Soft Skills';
@@ -122,9 +121,8 @@ class DataValues {
       '\nIt all starts during my early years of secondary schooling, I was an average student who lacked interest in studies. '
       'However, I made a conscious decision to change my approach when I entered high school. '
       'Through hard work and dedication, I transformed my academic performance and achieved the top position in my college. '
-      'This success motivated me to pursue a bachelor\'s degree in computer science at a renowned university in Pakistan. '
-      '\nHere, I am continuously expanding my knowledge and skills, '
-      'embracing opportunities to contribute to the dynamic field of computer science through innovation and perseverance.';
+      'This success motivated me to pursue a bachelor\'s degree in computer science at a'
+      ' renowned university in Pakistan. ';
   static const String educationOrgTitle =
       'NED University of Engineering & Technology';
   static const String educationOrgCourseName = 'Bachelor of Computer Science';
@@ -149,6 +147,8 @@ class DataValues {
   // Footer
   static const String copyright =
       "Copyright ©2023 Basit Ali. All Rights Reserved.";
+  static const String msCopyright =
+      "Copyright ©2023 Basit Ali.\nAll Rights Reserved.";
 
   static const String builtWith = "Built with Flutter";
 }

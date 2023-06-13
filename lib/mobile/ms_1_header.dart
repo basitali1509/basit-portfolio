@@ -30,22 +30,32 @@ class MS1Header extends StatelessWidget {
       ),
       const SizedBox(height: 40.0),
       Column(
-        children: [
+        children: const [
           SelectableText(
             DataValues.headerGreetings,
-            style: AppThemeData.darkTheme.textTheme.headlineSmall,
+            style: TextStyle(
+                fontSize: 24.0,
+                fontWeight: FontWeight.w700,
+                color: AppThemeData.textPrimary),
           ),
           SelectableText(
             DataValues.headerName,
-            style: AppThemeData.darkTheme.textTheme.displayMedium,
+            style:TextStyle(
+              fontSize: 46.0,
+              fontWeight: FontWeight.w700,
+              color: Colors.white,
+            ),
             textAlign: TextAlign.center,
           ),
           SelectableText(
             DataValues.headerTitle,
-            style: AppThemeData.darkTheme.textTheme.titleLarge,
+            style:TextStyle(
+                fontSize: 16.0,
+                fontWeight: FontWeight.w500,
+                color: AppThemeData.textGreyDark),
           ),
-          const SizedBox(height: 20.0),
-          const SocialProfiles(),
+          SizedBox(height: 24.0),
+          SocialProfiles(),
         ],
       ),
     ];

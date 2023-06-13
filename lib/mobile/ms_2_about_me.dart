@@ -13,19 +13,28 @@ class MS2AboutMe extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          TextPairs().type1(
-            title: DataValues.aboutMeOverviewTitle,
-            description: DataValues.aboutMeOverviewDescription,
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 24),
+            child: TextPairs().type1(
+              title: DataValues.aboutMeOverviewTitle,
+              description: DataValues.aboutMeOverviewDescription,
+            ),
           ),
           const SizedBox(height: 30.0),
-          TextPairs().type1(
-            title: DataValues.aboutMeHobbiesTitle,
-            description: DataValues.aboutMeHobbiesDescription,
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 40),
+            child: TextPairs().type1(
+              title: DataValues.aboutMeHobbiesTitle,
+              description: DataValues.aboutMeHobbiesDescription,
+            ),
           ),
           const SizedBox(height: 30.0),
-          TextPairs().type1(
-            title: DataValues.aboutMeGoalTitle,
-            description: DataValues.aboutMeGoalDescription,
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 40),
+            child: TextPairs().type1(
+              title: DataValues.aboutMeGoalTitle,
+              description: DataValues.aboutMeGoalDescription,
+            ),
           ),
         ],
       ),
@@ -40,12 +49,15 @@ class MS2AboutMe extends StatelessWidget {
           key: KeyHolders.aboutKey,
           color: AppThemeData.backgroundGrey,
           child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 20),
+            padding: const EdgeInsets.symmetric(vertical: 40),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const FrameTitle(
-                    title: DataValues.aboutMeTitle, description: ''),
+                const Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 40),
+                  child:  FrameTitle(
+                      title: DataValues.aboutMeTitle, description: ''),
+                ),
                 const SizedBox(height: 15.0),
                 bio(context),
               ],

@@ -48,10 +48,13 @@ class DS5Education extends StatelessWidget {
                 ),
                 SizedBox(width: MediaQuery.of(context).size.width * 0.06),
                 Expanded(
-                  child: SelectableText(
-                    DataValues.educationDescription,
-                    textAlign: TextAlign.left,
-                    style: Theme.of(context).textTheme.titleSmall,
+                  child: Padding(
+                    padding: const EdgeInsets.only(top: 15),
+                    child: SelectableText(
+                      DataValues.educationDescription,
+                      textAlign: TextAlign.left,
+                      style: Theme.of(context).textTheme.titleSmall,
+                    ),
                   ),
                 ),
               ],

@@ -15,7 +15,7 @@ class MS5Education extends StatelessWidget {
       key: KeyHolders.educationKey,
       color: AppThemeData.backgroundGrey,
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 20),
+        padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 25),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -23,7 +23,7 @@ class MS5Education extends StatelessWidget {
                 title: DataValues.educationTitle,
                 description: ' '),
             const SizedBox(height: 10.0),
-            ContainerCard().type2(
+            ContainerCard().MStype2(
               image: 'NEDUET_logo',
               title: DataValues.educationOrgTitle,
               values: [
@@ -38,18 +38,19 @@ class MS5Education extends StatelessWidget {
                 DataValues.educationEmptySpace3,
 
               ],
-              message: DataValues.linkedinURL.toString(),
-              url: DataValues.linkedinURL,
             ),
             const SizedBox(height: 40.0),
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 10),
+        const Padding(
+          padding:  EdgeInsets.symmetric(horizontal: 10),
           child: SelectableText(
             DataValues.educationDescription,
-            textAlign: TextAlign.justify,
-            style: Theme.of(context).textTheme.titleSmall,
+            style: TextStyle(
+                fontSize: 14.0,
+                fontWeight: FontWeight.w400,
+                color: AppThemeData.textGreyLight),
           ),
         ),
+            const SizedBox(height: 20,),
           ],
         ),
       ),

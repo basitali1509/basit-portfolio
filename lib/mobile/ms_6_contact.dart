@@ -20,18 +20,25 @@ class MS6Contact extends StatelessWidget {
             height: 15.0,
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 40.0),
+            padding: const EdgeInsets.symmetric(horizontal: 30.0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 const FrameTitle(
                     title: DataValues.contactTitle,
-                    description: DataValues.contactDescription),
-                const SizedBox(height: 30.0),
+                    description: ' '),
+                const SelectableText(
+                  textAlign: TextAlign.center,
+                  DataValues.contactDescription,
+                  style: TextStyle(
+                      fontSize: 14.0,
+                      fontWeight: FontWeight.w400,
+                      color: AppThemeData.textGreyLight),
+                ),
+                const SizedBox(height: 20.0),
                 SelectableText(DataValues.contactBanner,
                     style: TextStyle(
-                      fontSize: AppThemeData
-                          .darkTheme.textTheme.titleMedium!.fontSize,
+                      fontSize: 16,
                       fontWeight: AppThemeData
                           .darkTheme.textTheme.titleLarge!.fontWeight,
                       color: AppThemeData.textWhite,
@@ -42,7 +49,11 @@ class MS6Contact extends StatelessWidget {
                   child: GestureDetector(
                     onTap: () {
                       Clipboard.setData(
-                        const ClipboardData(text: DataValues.contactEmail),
+
+                        const ClipboardData(
+                            text: DataValues.contactEmail,
+
+                        ),
                       );
                       ScaffoldMessenger.of(context).showSnackBar(SnackBar(
                         content: Text(
@@ -72,7 +83,7 @@ class MS6Contact extends StatelessWidget {
             ),
           ),
           const SizedBox(
-            height: 20.0,
+            height: 24.0,
           ),
           const SocialProfiles(),
           const SizedBox(

@@ -33,7 +33,7 @@ class _MS4PersonalProjectsState extends State<MS4PersonalProjects> {
       key: KeyHolders.personalProjectsKey,
       color: AppThemeData.backgroundGrey,
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 40,vertical: 20),
+        padding: const EdgeInsets.symmetric(horizontal: 0,vertical: 20),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -43,7 +43,7 @@ class _MS4PersonalProjectsState extends State<MS4PersonalProjects> {
             Column(
               children: [
                 SizedBox(
-                  height: 500,
+                  height: 540,
                   child: PageView.builder(
                     controller: _pageController,
                     itemCount: projectDataList.length,
@@ -54,8 +54,8 @@ class _MS4PersonalProjectsState extends State<MS4PersonalProjects> {
                     },
                     itemBuilder: (context, index) {
                       return Container(
-                        margin: const EdgeInsets.all(15),
-                        child: ContainerCard().type3(
+                        margin: const EdgeInsets.symmetric(vertical: 16, horizontal: 12),
+                        child: ContainerCard().MStype3(
                           image: projectDataList[index].image,
                           title: projectDataList[index].title,
                           height: projectDataList[index].height,
@@ -94,7 +94,7 @@ class _MS4PersonalProjectsState extends State<MS4PersonalProjects> {
                           margin: const EdgeInsets.symmetric(horizontal: 2),
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
-                            color: _currentPage == index ? Colors.blue : Colors.grey,
+                            color: _currentPage == index ? const Color(0xFF019FAB) : Colors.grey,
                           ),
                         );
                       }),

@@ -1,0 +1,49 @@
+name: basit_ali
+description: Hello there, I'm Basit Ali. This is my personal website, which contains public information that anyone can find on the internet.
+
+publish_to: 'none'
+
+version: 1.1.2+0
+
+environment:
+  sdk: '>=2.19.2 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  url_launcher: ^6.1.9
+  flutter_launcher_icons: ^0.13.1
+
+  flutter_native_splash: ^2.2.17
+
+flutter_native_splash:
+  image: assets/images/profile_bg_icon.png
+  color: "#121212"
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/fonts/
+    - assets/icons/
+    - assets/images/
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+          style: normal
+          weight: 400
+        - asset: assets/fonts/Poppins-Medium.ttf
+          style: normal
+          weight: 500
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          style: normal
+          weight: 600
+        - asset: assets/fonts/Poppins-Bold.ttf
+          style: normal
+          weight: 700

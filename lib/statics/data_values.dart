@@ -46,11 +46,8 @@ class DataValues {
       ' Hard work and sacrifice are the foundations of my journey, propelling me toward victory. '
       'Beyond the world of programming, my heart finds solace in the beauty of sports, '
       'with football reigning supreme in my passions. Along this thrilling path, '
-      'my ultimate goal is to make meaningful contributions to the tech community and help shape a brighter future through innovative projects.'
-      '\nLooking back at my journey so far and the countless possibilities ahead, '
-      'I feel a sense of anticipation and unwavering determination to make a real impact. '
-      'With a growing set of technical skills and a deep-rooted passion for progress,'
-      ' I eagerly embrace challenges as opportunities to bring about transformative innovations.';
+      'my ultimate goal is to make meaningful contributions to the tech community '
+      'and help shape a brighter future through innovative projects.';
 
   static const String aboutMeNationalityTitle = 'From';
   static const String aboutMeNationalityDescription = 'Karachi, Pakistan';

@@ -80,7 +80,7 @@ class DataValues {
   // Personal Projects
   static const String personalProjects = 'Projects';
 
-  static const String projectTitle = 'FOODIEMANIA - Food App';
+  static const String projectTitle = 'FOODIEMANIA';
   static const String projectDescription =
       '• A food delivery app that enables users to order their favorite food items from nearby restaurants.\n'
       '• Integrated the Stripe payment gateway to facilitate secure transactions.\n'
@@ -89,7 +89,7 @@ class DataValues {
   static const String projectLink =
       'https://www.linkedin.com/posts/basit-ali-code404_flutter-fooddeliveryapp-stripe-activity-7070425602775801856-i_Kn?utm_source=share&utm_medium=member_desktop';
 
-  static const String project1Title = 'CHAZZ - Chat App';
+  static const String project1Title = 'CHAZZ';
   static const String project1Description =
       '• A chatting app that enables multiple users to chat with each other in real-time.\n'
       '• Implemented Firebase Authentication for secure login and signup using email or phone number.\n'

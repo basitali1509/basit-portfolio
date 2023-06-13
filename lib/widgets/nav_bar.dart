@@ -110,9 +110,9 @@ class NavBar {
       child: ListView(
         padding: const EdgeInsets.symmetric(horizontal: 20.0),
         children: [
-          const SizedBox(height: 35.0),
+          const SizedBox(height: 25.0),
           miniHeader(),
-          const SizedBox(height: 40.0),
+          const SizedBox(height: 30.0),
           ButtonTextLarge(
             text: DataValues.navBarAboutMe,
             onPressed: () => Scrollable.ensureVisible(
@@ -121,7 +121,7 @@ class NavBar {
             ),
             message: 'Go to ${DataValues.navBarAboutMe} section',
           ),
-          const SizedBox(height: 20.0),
+          const SizedBox(height: 8.0),
           ButtonTextLarge(
             text: DataValues.navBarSkillsAchievements,
             onPressed: () => Scrollable.ensureVisible(
@@ -130,7 +130,7 @@ class NavBar {
             ),
             message: 'Go to ${DataValues.navBarSkillsAchievements} section',
           ),
-          const SizedBox(height: 20.0),
+          const SizedBox(height: 8.0),
           ButtonTextLarge(
             text: DataValues.navBarPersonalProjects,
             onPressed: () => Scrollable.ensureVisible(
@@ -139,7 +139,7 @@ class NavBar {
             ),
             message: 'Go to ${DataValues.navBarPersonalProjects} section',
           ),
-          const SizedBox(height: 20.0),
+          const SizedBox(height: 8.0),
           ButtonTextLarge(
             text: DataValues.navBarEducation,
             onPressed: () => Scrollable.ensureVisible(
@@ -148,7 +148,7 @@ class NavBar {
             ),
             message: 'Go to ${DataValues.navBarEducation} section',
           ),
-          const SizedBox(height: 20.0),
+          const SizedBox(height: 8.0),
           ButtonTextLarge(
               text: DataValues.navBarContactMe,
               onPressed: () => Scrollable.ensureVisible(
@@ -157,7 +157,7 @@ class NavBar {
                   ),
               // color: AppThemeData.buttonPrimary,
               message: 'Go to ${DataValues.navBarContactMe} section'),
-          const SizedBox(height: 20.0),
+          const SizedBox(height: 8.0),
           ButtonRectangle(
               name: DataValues.navBarResume,
               onPressed: (){

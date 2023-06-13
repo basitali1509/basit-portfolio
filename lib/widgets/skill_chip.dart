@@ -1,3 +1,4 @@
+import 'package:basit_ali/theme/responsive_screen_provider.dart';
 import 'package:flutter/material.dart';
 
 class SkillChip extends StatelessWidget {
@@ -11,6 +12,7 @@ class SkillChip extends StatelessWidget {
       backgroundColor: Colors.blueGrey,
       autofocus: true,
       label: Text(label),
+      labelStyle: TextStyle(fontSize: ResponsiveScreenProvider.isMobileScreen(context) ?  12 : 14)  ,
     );
   }
 }

@@ -45,10 +45,13 @@ class _MS3SkillsState extends State<MS3Skills> {
           ),
 
           const SizedBox(height: 30.0),
-          Center(
-            child: ContainerCard().MStype6(
-              title: DataValues.softSkillsTitle,
-              value: DataValues.values,
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 30),
+            child: Center(
+              child: ContainerCard().MStype6(
+                title: DataValues.softSkillsTitle,
+                value: DataValues.values,
+              ),
             ),
           ),
         ],

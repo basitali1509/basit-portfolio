@@ -326,7 +326,7 @@ class ContainerCard {
                         child: Image.asset('assets/images/$image', height: height),
                       ),
                     )),
-                const SizedBox(height: 12.0),
+                const SizedBox(height: 10.0),
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 8),
                   child: SelectableText(title,
@@ -564,7 +564,7 @@ class ContainerCard {
         ],
       ),
       child: Padding(
-        padding: const EdgeInsets.all(30.0),
+        padding: const EdgeInsets.all(20.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -585,7 +585,7 @@ class ContainerCard {
                 const SizedBox(height: 18.0),
                 Wrap(
                   spacing: 10.0,
-                  runSpacing: 13.0,
+                  runSpacing: 12.0,
                   children: [
                     for (int i = 0; i < value.length; i++)
                       SkillChip(label: value[i]),
@@ -842,7 +842,7 @@ class ContainerCard {
         ],
       ),
       child: Padding(
-        padding: const EdgeInsets.all(30.0),
+        padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 20),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -943,18 +943,18 @@ class ContainerCard {
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
                         CircleAvatar(
-                            radius: 30,
+                            radius: 32,
                             backgroundColor: Colors.yellow.withOpacity(.09),
                             child: Image.asset(
                               image7,
-                              height: 42,
+                              height: 40,
                               fit: BoxFit.cover,
                             )),
                         const SizedBox(
                           width: 8,
                         ),
                         CircleAvatar(
-                            radius: 35,
+                            radius: 32,
                             child: Image.asset(
                               image8,
                               height: 20,
@@ -964,7 +964,7 @@ class ContainerCard {
                           width: 8,
                         ),
                         CircleAvatar(
-                            radius: 33,
+                            radius: 32,
                             backgroundColor:
                             const Color(0xFF02045D).withOpacity(.2),
                             child: Image.asset(

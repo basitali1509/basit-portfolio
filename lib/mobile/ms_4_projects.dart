@@ -43,7 +43,7 @@ class _MS4PersonalProjectsState extends State<MS4PersonalProjects> {
             Column(
               children: [
                 SizedBox(
-                  height: 540,
+                  height: MediaQuery.of(context).size.width < 330 ?  540 : 520,
                   child: PageView.builder(
                     controller: _pageController,
                     itemCount: projectDataList.length,

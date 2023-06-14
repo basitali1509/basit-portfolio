@@ -125,7 +125,7 @@ class _HomePageState extends State<HomePage> {
           : AppBar(elevation: 0.0),
       drawer: ResponsiveScreenProvider.isDesktopScreen(context)
           ? null
-          : NavBar().mobileNavBar(),
+          : NavBar().mobileNavBar(context),
       body: RawKeyboardListener(
         focusNode: FocusNode(),
         autofocus: true,

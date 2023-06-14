@@ -1,3 +1,4 @@
+import 'package:basit_ali/theme/responsive_screen_provider.dart';
 import 'package:flutter/material.dart';
 
 import '../theme/app_theme.dart';
@@ -7,13 +8,16 @@ class ButtonRectangle extends StatelessWidget {
   final VoidCallback onPressed;
   final Color color;
   final String message;
+  final double height, width;
 
   const ButtonRectangle(
       {Key? key,
       required this.name,
       required this.onPressed,
       required this.color,
-      required this.message})
+      required this.message,
+      required this.height,
+      required this.width})
       : super(key: key);
 
   @override
@@ -25,7 +29,7 @@ class ButtonRectangle extends StatelessWidget {
         style: ElevatedButton.styleFrom(
           backgroundColor: color,
           foregroundColor: AppThemeData.textWhite,
-          minimumSize: const Size(170.0, 50.0),
+          minimumSize: Size(width, height),
           textStyle: Theme.of(context).textTheme.titleMedium,
           elevation: 0.0,
           shape: RoundedRectangleBorder(

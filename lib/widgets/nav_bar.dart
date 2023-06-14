@@ -50,24 +50,26 @@ class NavBar {
         ButtonTextLarge(
             text: DataValues.navBarContactMe,
             onPressed: () => Scrollable.ensureVisible(
-              KeyHolders.contactKey.currentContext!,
-              duration: const Duration(milliseconds: 1000),
-            ),
+                  KeyHolders.contactKey.currentContext!,
+                  duration: const Duration(milliseconds: 1000),
+                ),
             // color: AppThemeData.buttonPrimary,
             message: 'Go to ${DataValues.navBarContactMe} section'),
         const SizedBox(width: 20.0),
         ButtonRectangle(
             name: DataValues.navBarResume,
-            onPressed: (){
+            onPressed: () {
               ResumeLauncher.launchResume();
             },
             color: AppThemeData.buttonPrimary,
+            width: 170,
+            height: 50,
             message: 'Open my ${DataValues.navBarResume}'),
       ],
     );
   }
 
-  Widget mobileNavBar() {
+  Widget mobileNavBar(BuildContext context) {
     Widget miniHeader() {
       return Column(
         children: [
@@ -115,55 +117,73 @@ class NavBar {
           const SizedBox(height: 30.0),
           ButtonTextLarge(
             text: DataValues.navBarAboutMe,
-            onPressed: () => Scrollable.ensureVisible(
-              KeyHolders.aboutKey.currentContext!,
-              duration: const Duration(milliseconds: 1000),
-            ),
+            onPressed: () {
+              Scrollable.ensureVisible(
+                KeyHolders.aboutKey.currentContext!,
+                duration: const Duration(milliseconds: 1000),
+              );
+              Navigator.pop(context);
+            },
             message: 'Go to ${DataValues.navBarAboutMe} section',
           ),
           const SizedBox(height: 8.0),
           ButtonTextLarge(
             text: DataValues.navBarSkillsAchievements,
-            onPressed: () => Scrollable.ensureVisible(
-              KeyHolders.skillsAchievements.currentContext!,
-              duration: const Duration(milliseconds: 1000),
-            ),
+            onPressed: () {
+              Scrollable.ensureVisible(
+                KeyHolders.skillsAchievements.currentContext!,
+                duration: const Duration(milliseconds: 1000),
+              );
+              Navigator.pop(context);
+            },
             message: 'Go to ${DataValues.navBarSkillsAchievements} section',
           ),
           const SizedBox(height: 8.0),
           ButtonTextLarge(
             text: DataValues.navBarPersonalProjects,
-            onPressed: () => Scrollable.ensureVisible(
-              KeyHolders.personalProjectsKey.currentContext!,
-              duration: const Duration(milliseconds: 1000),
-            ),
+            onPressed: () {
+              Scrollable.ensureVisible(
+                KeyHolders.personalProjectsKey.currentContext!,
+                duration: const Duration(milliseconds: 1000),
+              );
+              Navigator.pop(context);
+            },
             message: 'Go to ${DataValues.navBarPersonalProjects} section',
           ),
           const SizedBox(height: 8.0),
           ButtonTextLarge(
             text: DataValues.navBarEducation,
-            onPressed: () => Scrollable.ensureVisible(
-              KeyHolders.educationKey.currentContext!,
-              duration: const Duration(milliseconds: 1000),
-            ),
+            onPressed: () {
+              Scrollable.ensureVisible(
+                KeyHolders.educationKey.currentContext!,
+                duration: const Duration(milliseconds: 1000),
+              );
+              Navigator.pop(context);
+            },
             message: 'Go to ${DataValues.navBarEducation} section',
           ),
           const SizedBox(height: 8.0),
           ButtonTextLarge(
               text: DataValues.navBarContactMe,
-              onPressed: () => Scrollable.ensureVisible(
-                    KeyHolders.contactKey.currentContext!,
-                    duration: const Duration(milliseconds: 1000),
-                  ),
+              onPressed: () {
+                Scrollable.ensureVisible(
+                  KeyHolders.contactKey.currentContext!,
+                  duration: const Duration(milliseconds: 1000),
+                );
+                Navigator.pop(context);
+              },
               // color: AppThemeData.buttonPrimary,
               message: 'Go to ${DataValues.navBarContactMe} section'),
           const SizedBox(height: 8.0),
           ButtonRectangle(
               name: DataValues.navBarResume,
-              onPressed: (){
+              onPressed: () {
                 ResumeLauncher.launchResume();
+                Navigator.pop(context);
               },
               color: AppThemeData.buttonPrimary,
+              height: 40,
+              width: 120,
               message: 'Open my ${DataValues.navBarResume}'),
           const SizedBox(height: 30.0),
         ],

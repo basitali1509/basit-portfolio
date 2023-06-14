@@ -14,7 +14,6 @@ class MS4PersonalProjects extends StatefulWidget {
 }
 
 class _MS4PersonalProjectsState extends State<MS4PersonalProjects> {
-
   final PageController _pageController = PageController(viewportFraction: 0.8);
   int _currentPage = 0;
 
@@ -27,23 +26,23 @@ class _MS4PersonalProjectsState extends State<MS4PersonalProjects> {
       });
     });
   }
+
   @override
   Widget build(BuildContext context) {
     return Container(
       key: KeyHolders.personalProjectsKey,
       color: AppThemeData.backgroundGrey,
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 0,vertical: 20),
+        padding: const EdgeInsets.symmetric(horizontal: 0, vertical: 20),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const FrameTitle(
-                title: DataValues.personalProjects,
-                description: ''),
+                title: DataValues.personalProjects, description: ''),
             Column(
               children: [
                 SizedBox(
-                  height: MediaQuery.of(context).size.width < 330 ?  540 : 520,
+                  height: MediaQuery.of(context).size.width < 330 ? 530 : 520,
                   child: PageView.builder(
                     controller: _pageController,
                     itemCount: projectDataList.length,
@@ -54,7 +53,8 @@ class _MS4PersonalProjectsState extends State<MS4PersonalProjects> {
                     },
                     itemBuilder: (context, index) {
                       return Container(
-                        margin: const EdgeInsets.symmetric(vertical: 16, horizontal: 12),
+                        margin: const EdgeInsets.symmetric(
+                            vertical: 16, horizontal: 12),
                         child: ContainerCard().MStype3(
                           image: projectDataList[index].image,
                           title: projectDataList[index].title,
@@ -63,7 +63,8 @@ class _MS4PersonalProjectsState extends State<MS4PersonalProjects> {
                           message: projectDataList[index].message,
                           fontSize: projectDataList[index].size,
                           url: projectDataList[index].url,
-                          isButtonEnabled: projectDataList[index].isButtonEnabled,
+                          isButtonEnabled:
+                              projectDataList[index].isButtonEnabled,
                         ),
                       );
                     },
@@ -87,14 +88,17 @@ class _MS4PersonalProjectsState extends State<MS4PersonalProjects> {
                     const SizedBox(width: 10),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: List<Widget>.generate(projectDataList.length, (index) {
+                      children: List<Widget>.generate(projectDataList.length,
+                          (index) {
                         return Container(
                           width: 7,
                           height: 7,
                           margin: const EdgeInsets.symmetric(horizontal: 2),
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
-                            color: _currentPage == index ? const Color(0xFF019FAB) : Colors.grey,
+                            color: _currentPage == index
+                                ? const Color(0xFF019FAB)
+                                : Colors.grey,
                           ),
                         );
                       }),
@@ -120,6 +124,7 @@ class _MS4PersonalProjectsState extends State<MS4PersonalProjects> {
       ),
     );
   }
+
   final List<ProjectData> projectDataList = [
     ProjectData(
       image: 'food_app.png',
@@ -144,7 +149,7 @@ class _MS4PersonalProjectsState extends State<MS4PersonalProjects> {
     ProjectData(
       image: 'notes_app.png',
       title: DataValues.project2Title,
-      height: 220.0,
+      height: 190.0,
       size: 11,
       values: DataValues.project2Description,
       message: DataValues.linkedinURL.toString(),
@@ -154,7 +159,7 @@ class _MS4PersonalProjectsState extends State<MS4PersonalProjects> {
     ProjectData(
       image: 'weather_app.png',
       title: DataValues.project3Title,
-      height: 200.0,
+      height: 190.0,
       size: 11,
       values: DataValues.project3Description,
       message: DataValues.linkedinURL.toString(),
@@ -162,5 +167,4 @@ class _MS4PersonalProjectsState extends State<MS4PersonalProjects> {
       isButtonEnabled: true,
     ),
   ];
-
 }

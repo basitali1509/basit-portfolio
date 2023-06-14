@@ -137,7 +137,6 @@ class ContainerCard {
     required String image,
     required String title,
     required List values,
-
   }) {
     return Container(
       decoration: BoxDecoration(
@@ -205,7 +204,6 @@ class ContainerCard {
     );
   }
 
-
   Widget type3({
     required String image,
     required String title,
@@ -230,7 +228,7 @@ class ContainerCard {
         ],
       ),
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 25),
+        padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -283,7 +281,6 @@ class ContainerCard {
     );
   }
 
-
   Widget MStype3({
     required String image,
     required String title,
@@ -318,14 +315,14 @@ class ContainerCard {
               children: [
                 Center(
                     child: Container(
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20.0),
-                      ),
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(20.0),
-                        child: Image.asset('assets/images/$image', height: height),
-                      ),
-                    )),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20.0),
+                  ),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(20.0),
+                    child: Image.asset('assets/images/$image', height: height),
+                  ),
+                )),
                 const SizedBox(height: 10.0),
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 8),
@@ -355,21 +352,20 @@ class ContainerCard {
               padding: const EdgeInsets.only(bottom: 16),
               child: isButtonEnabled
                   ? ButtonTextSmall(
-                text: 'See Demo >>',
-                message: message,
-                url: Uri.parse(url),
-              )
+                      text: 'See Demo >>',
+                      message: message,
+                      url: Uri.parse(url),
+                    )
                   : Text(
-                'See you soon with the link :)',
-                style: AppThemeData.darkTheme.textTheme.labelMedium,
-              ),
+                      'See you soon with the link :)',
+                      style: AppThemeData.darkTheme.textTheme.labelMedium,
+                    ),
             ),
           ],
         ),
       ),
     );
   }
-
 
   Widget type4({
     required String image,
@@ -546,8 +542,11 @@ class ContainerCard {
       ),
     );
   }
+
   Widget MStype6({
     required String title,
+    required double runSpacing,
+    required double spacing,
     required List<String> value,
   }) {
     return Container(
@@ -576,7 +575,7 @@ class ContainerCard {
                   title,
                   style: TextStyle(
                     fontSize:
-                    AppThemeData.darkTheme.textTheme.titleMedium!.fontSize,
+                        AppThemeData.darkTheme.textTheme.titleMedium!.fontSize,
                     fontWeight: AppThemeData
                         .darkTheme.textTheme.headlineSmall!.fontWeight,
                     color: AppThemeData.textWhite,
@@ -584,8 +583,8 @@ class ContainerCard {
                 ),
                 const SizedBox(height: 18.0),
                 Wrap(
-                  spacing: 10.0,
-                  runSpacing: 12.0,
+                  spacing: spacing,
+                  runSpacing: runSpacing,
                   children: [
                     for (int i = 0; i < value.length; i++)
                       SkillChip(label: value[i]),
@@ -599,7 +598,6 @@ class ContainerCard {
       ),
     );
   }
-
 
   Widget type7({
     required String title,
@@ -811,8 +809,6 @@ class ContainerCard {
     );
   }
 
-
-
   Widget MStype7({
     required String title,
     required String image1,
@@ -854,7 +850,7 @@ class ContainerCard {
                   title,
                   style: TextStyle(
                     fontSize:
-                    AppThemeData.darkTheme.textTheme.titleMedium!.fontSize,
+                        AppThemeData.darkTheme.textTheme.titleMedium!.fontSize,
                     fontWeight: AppThemeData
                         .darkTheme.textTheme.headlineSmall!.fontWeight,
                     color: AppThemeData.textWhite,
@@ -869,7 +865,7 @@ class ContainerCard {
                         CircleAvatar(
                             radius: 30,
                             backgroundColor:
-                            const Color(0xFF02045D).withOpacity(.2),
+                                const Color(0xFF02045D).withOpacity(.2),
                             child: Image.asset(
                               image1,
                               height: 40,
@@ -881,7 +877,7 @@ class ContainerCard {
                         CircleAvatar(
                             radius: 30,
                             backgroundColor:
-                            const Color(0xFF02045D).withOpacity(.2),
+                                const Color(0xFF02045D).withOpacity(.2),
                             child: Image.asset(
                               image2,
                               height: 40,
@@ -905,7 +901,7 @@ class ContainerCard {
                       children: [
                         CircleAvatar(
                             backgroundColor:
-                            const Color(0xFF350446).withOpacity(.2),
+                                const Color(0xFF350446).withOpacity(.2),
                             radius: 30,
                             child: Image.asset(
                               image4,
@@ -918,7 +914,7 @@ class ContainerCard {
                         CircleAvatar(
                             radius: 32,
                             backgroundColor:
-                            const Color(0xFF02045D).withOpacity(.2),
+                                const Color(0xFF02045D).withOpacity(.2),
                             child: Image.asset(
                               image5,
                               height: 48,
@@ -966,7 +962,7 @@ class ContainerCard {
                         CircleAvatar(
                             radius: 32,
                             backgroundColor:
-                            const Color(0xFF02045D).withOpacity(.2),
+                                const Color(0xFF02045D).withOpacity(.2),
                             child: Image.asset(
                               image10,
                               height: 32,
@@ -981,7 +977,7 @@ class ContainerCard {
                         CircleAvatar(
                             radius: 33,
                             backgroundColor:
-                            const Color(0xFF350446).withOpacity(.2),
+                                const Color(0xFF350446).withOpacity(.2),
                             child: Image.asset(
                               image9,
                               height: 28,
@@ -1004,7 +1000,7 @@ class ContainerCard {
                         CircleAvatar(
                             radius: 30,
                             backgroundColor:
-                            Colors.deepOrange.withOpacity(.085),
+                                Colors.deepOrange.withOpacity(.085),
                             child: Image.asset(
                               image6,
                               height: 43,

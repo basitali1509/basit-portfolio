@@ -13,7 +13,6 @@ class MS3Skills extends StatefulWidget {
 
 class _MS3SkillsState extends State<MS3Skills> {
   Widget titles(BuildContext context) {
-
     return SizedBox(
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -22,14 +21,18 @@ class _MS3SkillsState extends State<MS3Skills> {
             padding: const EdgeInsets.symmetric(horizontal: 18),
             child: ContainerCard().MStype7(
                 title: DataValues.techStackTitle,
-                image1: 'assets/icons/flutter_logo.png', image2: 'assets/icons/dart_logo.png',
-                image3: 'assets/icons/studio_logo.png', image4: 'assets/icons/kotlin_logo.png',
-                image5: 'assets/icons/cpp_logo.png', image6: 'assets/icons/git_logo.png',
-                image7: 'assets/icons/firebase_logo.png', image8: 'assets/icons/sqltie_logo.png',
+                image1: 'assets/icons/flutter_logo.png',
+                image2: 'assets/icons/dart_logo.png',
+                image3: 'assets/icons/studio_logo.png',
+                image4: 'assets/icons/kotlin_logo.png',
+                image5: 'assets/icons/cpp_logo.png',
+                image6: 'assets/icons/git_logo.png',
+                image7: 'assets/icons/firebase_logo.png',
+                image8: 'assets/icons/sqltie_logo.png',
                 image9: 'assets/icons/stripe_logo.png',
-                image10: 'assets/icons/mysql_logo.png', image11: 'assets/icons/github_logo.png',
-                image12: 'assets/icons/rest_api_logo.png'
-            ),
+                image10: 'assets/icons/mysql_logo.png',
+                image11: 'assets/icons/github_logo.png',
+                image12: 'assets/icons/rest_api_logo.png'),
           ),
           const SizedBox(height: 20.0),
           Padding(
@@ -43,13 +46,14 @@ class _MS3SkillsState extends State<MS3Skills> {
               ),
             ),
           ),
-
           const SizedBox(height: 30.0),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 30),
             child: Center(
               child: ContainerCard().MStype6(
                 title: DataValues.softSkillsTitle,
+                spacing: MediaQuery.of(context).size.width < 350 ? 9 : 10,
+                runSpacing: MediaQuery.of(context).size.width < 350 ? 9 : 12,
                 value: DataValues.values,
               ),
             ),
@@ -70,8 +74,7 @@ class _MS3SkillsState extends State<MS3Skills> {
             const Padding(
               padding: EdgeInsets.symmetric(horizontal: 30),
               child: FrameTitle(
-                  title: DataValues.skillsAchievementsTitle ,
-                  description: ''),
+                  title: DataValues.skillsAchievementsTitle, description: ''),
             ),
             const SizedBox(height: 10.0),
             titles(context),

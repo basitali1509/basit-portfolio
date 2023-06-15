@@ -793,7 +793,7 @@ class ContainerCard {
                                 Colors.deepOrange.withOpacity(.085),
                             child: Image.asset(
                               image6,
-                              height: 68,
+                              height: 72,
                               fit: BoxFit.cover,
                             )),
                       ],
@@ -998,12 +998,12 @@ class ContainerCard {
                           width: 8,
                         ),
                         CircleAvatar(
-                            radius: 30,
+                            radius: 33,
                             backgroundColor:
                                 Colors.deepOrange.withOpacity(.085),
                             child: Image.asset(
                               image6,
-                              height: 43,
+                              height: 50,
                               fit: BoxFit.cover,
                             )),
                       ],

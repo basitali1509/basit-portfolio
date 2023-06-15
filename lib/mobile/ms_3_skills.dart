@@ -26,7 +26,7 @@ class _MS3SkillsState extends State<MS3Skills> {
                 image3: 'assets/icons/studio_logo.png',
                 image4: 'assets/icons/kotlin_logo.png',
                 image5: 'assets/icons/cpp_logo.png',
-                image6: 'assets/icons/git_logo.png',
+                image6: 'assets/icons/postman_logo.png',
                 image7: 'assets/icons/firebase_logo.png',
                 image8: 'assets/icons/sqltie_logo.png',
                 image9: 'assets/icons/stripe_logo.png',

@@ -15,7 +15,7 @@ class DataValues {
   static Uri linkedinURL =
       Uri.parse('https://www.linkedin.com/in/basit-ali-code404/');
   static String resumeURL =
-      'https://drive.google.com/file/d/1rpeMxWAuTIICLFGuQOBC84mvrtpsQXXl/view?usp=sharing';
+      'https://drive.google.com/file/d/1fF5knnHmkHwf4RtFyIWqyH9_ATE4L0fu/view?usp=sharing';
   static Uri instagramURL =
       Uri.parse('https://www.instagram.com/__basit__ali/');
 

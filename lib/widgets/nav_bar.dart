@@ -118,11 +118,11 @@ class NavBar {
           ButtonTextLarge(
             text: DataValues.navBarAboutMe,
             onPressed: () {
+              Navigator.pop(context);
               Scrollable.ensureVisible(
                 KeyHolders.aboutKey.currentContext!,
-                duration: const Duration(milliseconds: 1000),
+                duration: const Duration(milliseconds: 1200),
               );
-              Navigator.pop(context);
             },
             message: 'Go to ${DataValues.navBarAboutMe} section',
           ),
@@ -130,11 +130,11 @@ class NavBar {
           ButtonTextLarge(
             text: DataValues.navBarSkillsAchievements,
             onPressed: () {
+              Navigator.pop(context);
               Scrollable.ensureVisible(
                 KeyHolders.skillsAchievements.currentContext!,
-                duration: const Duration(milliseconds: 1000),
+                duration: const Duration(milliseconds: 1200),
               );
-              Navigator.pop(context);
             },
             message: 'Go to ${DataValues.navBarSkillsAchievements} section',
           ),
@@ -142,11 +142,11 @@ class NavBar {
           ButtonTextLarge(
             text: DataValues.navBarPersonalProjects,
             onPressed: () {
+              Navigator.pop(context);
               Scrollable.ensureVisible(
                 KeyHolders.personalProjectsKey.currentContext!,
-                duration: const Duration(milliseconds: 1000),
+                duration: const Duration(milliseconds: 1200),
               );
-              Navigator.pop(context);
             },
             message: 'Go to ${DataValues.navBarPersonalProjects} section',
           ),
@@ -154,11 +154,11 @@ class NavBar {
           ButtonTextLarge(
             text: DataValues.navBarEducation,
             onPressed: () {
+              Navigator.pop(context);
               Scrollable.ensureVisible(
                 KeyHolders.educationKey.currentContext!,
-                duration: const Duration(milliseconds: 1000),
+                duration: const Duration(milliseconds: 1200),
               );
-              Navigator.pop(context);
             },
             message: 'Go to ${DataValues.navBarEducation} section',
           ),
@@ -166,11 +166,11 @@ class NavBar {
           ButtonTextLarge(
               text: DataValues.navBarContactMe,
               onPressed: () {
+                Navigator.pop(context);
                 Scrollable.ensureVisible(
                   KeyHolders.contactKey.currentContext!,
-                  duration: const Duration(milliseconds: 1000),
+                  duration: const Duration(milliseconds: 1200),
                 );
-                Navigator.pop(context);
               },
               // color: AppThemeData.buttonPrimary,
               message: 'Go to ${DataValues.navBarContactMe} section'),

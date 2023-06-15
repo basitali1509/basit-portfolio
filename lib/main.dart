@@ -164,11 +164,18 @@ class _HomePageState extends State<HomePage> {
           : FloatingActionButton(
               onPressed: _scrollToTop,
               tooltip: 'Go to top',
-              mini: ResponsiveScreenProvider.isMobileScreen(context) ? true : false,
+              mini: ResponsiveScreenProvider.isMobileScreen(context)
+                  ? true
+                  : false,
               backgroundColor: AppThemeData.buttonPrimary,
               foregroundColor: AppThemeData.iconSecondary,
-              child: const Icon(
-                Icons.arrow_upward_rounded,
+              child: Center(
+                child: Icon(
+                  Icons.arrow_upward_rounded,
+                  size: ResponsiveScreenProvider.isMobileScreen(context)
+                      ? 22
+                      : 24,
+                ),
               ),
             ),
     );

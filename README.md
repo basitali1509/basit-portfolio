@@ -1,17 +1,9 @@
-# Basit Ali
+# Basit Ali Portfolio
+
+![Portfolio Mockup](https://upwork-usw2-prod-agora-file-storage.s3.us-west-2.amazonaws.com/profile/portfolio/thumbnail/4118c809033e6c9ac57d02d89435d117?response-content-disposition=inline;+filename=%22image_large%22;+filename*=utf-8%27%27image_large&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHkaCXVzLXdlc3QtMiJGMEQCIAbZO9jqZJaXTgwFm77/YBF3rhD1GVJLBZmIUWmw9y8rAiBBga4d21OKa0jmTjgePzfiATUb3/5HgMWXl/xlWPPDZirWBAjS//////////8BEAAaDDczOTkzOTE3MzgxOSIMB7jnGHEGozXzwL5mKqoE99OJQhuGXP1stZPxNk6ZLmvehCi9wiEVsaI/CSuC59CaTov5Lth040MOpFco7shRjbxlQfkkXwxrA1qMVEbuSnukSgbYXGxS4Qmld5wl3WSICT/j04z6ruW19i08VdVvhwS2TV0sR0VxQLu4xdq71OqK68Nc0jtG%2BppEwloCh7xEW2FJsUdvHWrR%2BQgcxfm6cDpgAp%2BWEw1M7Nn9UiGLSj2/5%2Bi6r1aHDKS23hUsSJuK1R/8hBYAcEgTJqT6rH1lxiQk5JTSpQwL/ZXYkoRUT9cEP/hdldwiEMN98/qkuXcztLehZXW4nJCGn08f96aF4JHSi4Z29r0eWV09TmkFhfH3P5d6ZKwdGctHxcf0qRuAC/MXR3LvnlBzQB76wgCGhdZSIJeOvhiS1IYPn8N8AAe0DBhcLmgXCOTUIdWetkyvHbNWO7c%2BdkdPGO7nfF9KvF%2BUzBt94y2JNBXa/2vKVZiU9GWVtB9rBsYab78eV3M7MPlo6z5PBh6MkMQ3sDjqKmdznTk%2B3Z1PkSOq8eHWi7/J379XiPSlsV5uQhxrcX20KPpBVC4gyAmSroXHmVe03kks47Q3/6AhmN69KzsEBLUWsrNiIq2mqsQqkUqYwAAXwtaw0G1W%2BXAYMj%2B6f6NTb4ncMtJrNm/ih%2BWeTabqYbWFl5luP/mR9VgSdC4YCllzZTRCA70r4RL5dVOlkyBlzIjahzB5kziSysIMS3SmecP5jS8IyJCS4CAw%2BIrQpAY6qAEhwwVSF7Z3KjYXBo%2BzdGn1yYKIJdUBqsxMSLmiaRPWnPuLpjYMDLD2lrrzawzU59evOXb/j2/2/FuqLzi%2B3phSDKegjbI%2BDM8kKrtAHB/RZKwjC9lwuW6V3S9Af4N2DVPzCaVvYmjL75JOFskpnp3k8UXjW0XSKxjkeEGb5mE2fhrcaotEpT3kYwOeLSa8Tapmi2kEWYUA6tzBO8MZos0u4hXE3i6CwKE=&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230622T101623Z&X-Amz-SignedHeaders=host&X-Amz-Expires=899&X-Amz-Credential=ASIA2YR6PYW52VEIXHUC/20230622/us-west-2/s3/aws4_request&X-Amz-Signature=405516849de1f4176aeabc43b6077cd14c3996f72c32796168a6f41efe8c3ce0)
 
 
+# [Webiste URL](https://basitali1509.github.io/#/)
 
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Explore a comprehensive overview of myself, showcasing my skills, relevant projects, and education.

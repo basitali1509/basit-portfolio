@@ -65,6 +65,7 @@ class _MS4PersonalProjectsState extends State<MS4PersonalProjects> {
                           url: projectDataList[index].url,
                           isButtonEnabled:
                               projectDataList[index].isButtonEnabled,
+                          buttonText: projectDataList[index].buttonText,
                         ),
                       );
                     },
@@ -127,6 +128,17 @@ class _MS4PersonalProjectsState extends State<MS4PersonalProjects> {
 
   final List<ProjectData> projectDataList = [
     ProjectData(
+      image: 'Amazon_App.png',
+      title: DataValues.project4Title,
+      height: 190.0,
+      size: 11,
+      values: DataValues.project4Description,
+      message: DataValues.githubURL.toString(),
+      url: DataValues.project4Link,
+      isButtonEnabled: true,
+        buttonText: 'See GitHub >>'
+    ),
+    ProjectData(
       image: 'food_app.png',
       title: DataValues.projectTitle,
       size: 11,
@@ -135,6 +147,7 @@ class _MS4PersonalProjectsState extends State<MS4PersonalProjects> {
       message: DataValues.linkedinURL.toString(),
       url: DataValues.projectLink,
       isButtonEnabled: true,
+        buttonText: 'See Demo >>'
     ),
     ProjectData(
       image: 'chat_app.png',
@@ -145,6 +158,7 @@ class _MS4PersonalProjectsState extends State<MS4PersonalProjects> {
       message: DataValues.linkedinURL.toString(),
       url: DataValues.project1Link,
       isButtonEnabled: true,
+        buttonText: 'See Demo >>'
     ),
     ProjectData(
       image: 'notes_app.png',
@@ -155,6 +169,7 @@ class _MS4PersonalProjectsState extends State<MS4PersonalProjects> {
       message: DataValues.linkedinURL.toString(),
       url: DataValues.project2Link,
       isButtonEnabled: true,
+        buttonText: 'See Demo >>'
     ),
     ProjectData(
       image: 'weather_app.png',
@@ -165,6 +180,8 @@ class _MS4PersonalProjectsState extends State<MS4PersonalProjects> {
       message: DataValues.linkedinURL.toString(),
       url: DataValues.project3Link,
       isButtonEnabled: true,
+        buttonText: 'See Demo >>'
     ),
+
   ];
 }

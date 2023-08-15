@@ -7,6 +7,7 @@ class ProjectData {
   final String message;
   final String url;
   final bool isButtonEnabled;
+  final String buttonText;
 
   ProjectData({
     required this.image,
@@ -17,5 +18,6 @@ class ProjectData {
     required this.message,
     required this.url,
     required this.isButtonEnabled,
+    required this.buttonText
   });
 }

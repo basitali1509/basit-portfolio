@@ -5,7 +5,7 @@ class DataValues {
 
   static const String appDeveloper = 'Basit Ali';
   static const String appPackage = 'basitali';
-  static const String appVersion = '1.0.0';
+  static const String appVersion = '1.1.0';
   static const String appBuildNumber = '1';
 
   // External links
@@ -15,7 +15,7 @@ class DataValues {
   static Uri linkedinURL =
       Uri.parse('https://www.linkedin.com/in/basit-ali-code404/');
   static String resumeURL =
-      'https://drive.google.com/file/d/1fF5knnHmkHwf4RtFyIWqyH9_ATE4L0fu/view?usp=sharing';
+      'https://drive.google.com/file/d/1wXLzoXwSsSKBA3jOBE9gndU2uHDpknYG/view?usp=sharing';
   static Uri instagramURL =
       Uri.parse('https://www.instagram.com/__basit__ali/');
 
@@ -40,13 +40,10 @@ class DataValues {
 
   static const String aboutMeOverviewTitle = 'Overview';
   static const String aboutMeOverviewDescription =
-      'In the realm of computer science, '
-      'I find myself on an exhilarating path of self-discovery and growth. '
-      'As a passionate student and developer, I wholeheartedly dedicate my time to continuous learning.'
-      ' Hard work and sacrifice are the foundations of my journey, propelling me toward victory. '
-      'Beyond the world of programming, my heart finds solace in the beauty of sports, '
-      'with football reigning supreme in my passions. Along this thrilling path, '
-      'my ultimate goal is to make meaningful contributions to the tech community '
+      'I started programming 2 years ago, so with that experience, I share my expertise in Mobile Application Development. '
+      'As an enthusiastic student and a passionate developer, I wholeheartedly dedicate my time to continuous learning.'
+      ' Hard work and sacrifice are the foundations of my journey, propelling me towards success. '
+      ' Along this thrilling path, my ultimate goal is to make meaningful contributions to the tech community '
       'and help shape a brighter future through innovative projects.';
 
   static const String aboutMeNationalityTitle = 'From';
@@ -56,8 +53,7 @@ class DataValues {
   static const String hackerrankTitle = 'Hackerrank Badges';
   static const List<String> values = [
     'Communications',
-    'Mentorship',
-    'Management',
+    'Problem Solving',
     'Leadership',
     'Adaptability',
     'Decision-making'
@@ -113,6 +109,15 @@ class DataValues {
       '• Implemented MVVM architectural pattern for code organization and maintainability.';
   static const String project3Link =
       'https://www.linkedin.com/posts/basit-ali-code404_flutter-statemanagement-provider-activity-7042535290955010048-GQFN?utm_source=share&utm_medium=member_desktop';
+
+  static const String project4Title = 'E-commerce: Amazon Clone App';
+  static const String project4Description =
+      '• Developed a Full Stack E-commerce App with Flutter.\n'
+      '• Developed backend APIs with Node JS and MongoDB for data storage.\n'
+      '• Implemented User and Admin feature.\n'
+      '• Maintained code separation between client and server side.';
+  static const String project4Link =
+      'https://github.com/basitali1509/E-commere-Amazon-app';
 
   // Education
   static const String educationTitle = 'Education';

@@ -213,6 +213,7 @@ class ContainerCard {
     required String message,
     required String url,
     required bool isButtonEnabled,
+    required String buttonText
   }) {
     return Container(
       decoration: BoxDecoration(
@@ -267,7 +268,7 @@ class ContainerCard {
             const SizedBox(height: 10.0),
             isButtonEnabled
                 ? ButtonTextSmall(
-                    text: 'See Demo >>',
+                    text: buttonText,
                     message: message,
                     url: Uri.parse(url),
                   )
@@ -290,6 +291,7 @@ class ContainerCard {
     required String message,
     required String url,
     required bool isButtonEnabled,
+    required String buttonText
   }) {
     return Container(
       decoration: BoxDecoration(
@@ -352,7 +354,7 @@ class ContainerCard {
               padding: const EdgeInsets.only(bottom: 16),
               child: isButtonEnabled
                   ? ButtonTextSmall(
-                      text: 'See Demo >>',
+                      text: buttonText,
                       message: message,
                       url: Uri.parse(url),
                     )
